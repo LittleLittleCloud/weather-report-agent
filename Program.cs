@@ -75,9 +75,9 @@ public partial class WeatherReportTool
     [Function]
     public async Task<string> GetWeatherReport(string city)
     {
-        return """
+        return $$"""
         {
-            "city": "New York",
+            "city": "{{city}}",
             "temperature": "25°C",
             "weather": "Sunny"
         }
